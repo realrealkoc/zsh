@@ -71,15 +71,29 @@ setopt extendedglob
 bindkey -e
 
 # like in ergoemacs
-# bindkey '^Mj' backward-word
-bindkey '^[j' backward-word
-# bindkey '^Ml' forward-word
-bindkey '^[l' forward-word
+# bindkey '^M*' ...  - os x
 
 bindkey '^[i' up-line-or-history
 bindkey '^[k' down-line-or-history
 
+bindkey '^[j' backward-char
+bindkey '^[l' forward-char
+bindkey '^[u' backward-word
+bindkey '^[o' forward-word
+
+bindkey '^[d' backward-delete-char
+bindkey '^[f' forward-delete-char
 bindkey '^[e' backward-kill-word
+bindkey '^[r' forward-kill-word
+
+bindkey '^[h' beginning-of-line
+bindkey '^[H' end-of-line
+
+bindkey '^[g' kill-line
+bindkey '^[G' backward-kill-line
+
+bindkey '^z' yank
+bindkey '^[z' yank
 
 
 

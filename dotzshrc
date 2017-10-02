@@ -76,6 +76,11 @@ bindkey '^[j' backward-word
 # bindkey '^Ml' forward-word
 bindkey '^[l' forward-word
 
+bindkey '^[i' up-line-or-history
+bindkey '^[k' down-line-or-history
+
+bindkey '^[e' backward-kill-word
+
 
 
 # export MANPATH="/usr/local/man:$MANPATH"

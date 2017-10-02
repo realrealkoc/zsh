@@ -71,8 +71,11 @@ setopt extendedglob
 bindkey -e
 
 # like in ergoemacs
-bindkey '^Mj' backward-word
-bindkey '^Ml' forward-word
+# bindkey '^Mj' backward-word
+bindkey '^[j' backward-word
+# bindkey '^Ml' forward-word
+bindkey '^[l' forward-word
+
 
 
 # export MANPATH="/usr/local/man:$MANPATH"
